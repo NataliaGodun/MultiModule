@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>by.htp.main</groupId>
+  <artifactId>web1</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>web Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+    <parent>
+		<groupId>by.htp.main</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../parent/pom.xml</relativePath>
+	</parent>
+  
+  <dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.3.9.RELEASE</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>by.htp.main</groupId>
+			<artifactId>entity</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>by.htp.main</groupId>
+			<artifactId>service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>webproject</finalName>
+	</build>
+</project>
